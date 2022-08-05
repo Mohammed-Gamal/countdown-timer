@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<style>
+		* {padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #f8f8f8;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		h2 {
+			font-size: 30px;
+    	margin-bottom: 90px;
+		}
+		input[type='text'] {
+			border: none;
+			border-bottom: 1px solid #ddd;
+			padding: 12px;
+			font-size: 25px;
+		}
+		input[type='text']:focus {
+			outline: 1px solid #ddd
+		}
+		input[type='submit'] {
+			background-color: #ddd;
+			padding: 12px 30px;
+			display: inline-block;
+			margin-left: 25px;
+			border: 1px solid #3336;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		div.show {
+			color: red;
+			margin-top: 30px;
+			font-size: 22px;
+		}
+	</style>
+	<body>
+		<h2>Countdown timer</h2>
+		<form action="#">
+			<input type="text" class="count" placeholder="time in seconds">
+			<input type="submit" value="Generate">
+		</form>
+		<div class="show"></div>
+
+		<script src="file.js"></script>
+	</body>
+</html>
