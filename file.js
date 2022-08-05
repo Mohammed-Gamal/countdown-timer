@@ -24,3 +24,8 @@ function countdown(seconds) {
     } else clearInterval(timer);
   }, 1000);
 }
+
+window.onload = () => {
+  input.focus();
+};
+
